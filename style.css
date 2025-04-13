@@ -1,34 +1,115 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
 body {
-    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2c2f33, #23272a);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-a {
+.container {
+    max-width: 800px;
+    width: 90%;
+    padding: 30px;
+    background-color: #2f3136;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+nav a {
+    color: #7289da;
     text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0 25px;
+    color: #ccc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
 .btn {
-    background-color: #5865F2;
-    padding: 12px 24px;
-    color: white;
-    border-radius: 10px;
-    font-weight: 600;
-    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-.btn:hover {
+.primary {
+    background-color: #5865f2;
+    color: white;
+}
+
+.primary:hover {
     background-color: #4752c4;
 }
 
-.btn-outline {
-    background: transparent;
-    border: 2px solid #5865F2;
-    color: #5865F2;
+.secondary {
+    background-color: transparent;
+    color: #7289da;
+    border: 2px solid #7289da;
 }
 
-.btn-outline:hover {
-    background-color: #5865F2;
+.secondary:hover {
+    background-color: #7289da;
     color: white;
+}
+
+.features h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.features li {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.soon {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #888;
 }
